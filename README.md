@@ -27,7 +27,7 @@ Feel free to **add more questions, improve answers, or suggest updates** through
 | Q No. |  Questions       |
 |-------|------------------|
 | 01 | [Difference between React and React Native?](#q1-difference-between-react-and-react-native) |
-| 02 | [JSX in React and React Native?](#q2-jsx-in-react-and-react-native) |
+| 02 | [Explain the concept of JSX in React Native?](#q2-explain-the-concept-of-jsx-in-react-native) |
 
 <br />
 <hr />
@@ -35,7 +35,7 @@ Feel free to **add more questions, improve answers, or suggest updates** through
 ## Q1. Difference between React and React Native?
 
 ### Overview
-React and React Native are both developed by Facebook, but they serve different purposes. React is a JavaScript library for building web applications, while React Native is a framework for building mobile applications for iOS and Android. The use of JSX, state, props, and React Hooks further reinforces their similarities.
+React and React Native are both developed by Meta (Facebook), but they serve different purposes. React is a JavaScript library for building web applications, while React Native is a framework for building mobile applications for iOS and Android. The use of JSX, state, props, and React Hooks further reinforces their similarities.
 
 ### Key Differences
 - **Platform**: React is used for web applications, whereas React Native is used for mobile applications.
@@ -46,7 +46,9 @@ React and React Native are both developed by Facebook, but they serve different 
 
 [⬆ Back to question](#q1-difference-between-react-and-react-native)
 
-## Q2. JSX in React and React Native?
+## Q2. Explain the concept of JSX in React Native?
 JSX (JavaScript XML) is a syntax extension used in both React and React Native, allowing developers to write UI components in a syntax similar to HTML. In React, JSX is used to create virtual DOM elements that render as HTML in the browser. In React Native, JSX is also used, but it renders platform-specific components instead of HTML elements. This means that while JSX syntax is similar in both, React renders web elements, whereas React Native renders native mobile UI components.
 
 [⬆ Back to question](#q2-jsx-in-react-and-react-native)
+
+## Q3. 
