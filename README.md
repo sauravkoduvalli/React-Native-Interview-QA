@@ -44,7 +44,9 @@ React and React Native are both developed by Facebook, but they serve different 
 - **Navigation**: React JS uses URL-based navigation (React Router), whereas React Native suggests React Navigation.
 - **Performance**: React Native provides better performance on mobile by using native modules, while React relies on the virtual DOM for web rendering.
 
-**[⬆ Back to Top](#q1-difference-between-react-and-react-native)**
+[⬆ Back to question](#q1-difference-between-react-and-react-native)
 
 ## Q2. JSX in React and React Native?
 JSX (JavaScript XML) is a syntax extension used in both React and React Native, allowing developers to write UI components in a syntax similar to HTML. In React, JSX is used to create virtual DOM elements that render as HTML in the browser. In React Native, JSX is also used, but it renders platform-specific components instead of HTML elements. This means that while JSX syntax is similar in both, React renders web elements, whereas React Native renders native mobile UI components.
+
+[⬆ Back to question](#q2-jsx-in-react-and-react-native)
