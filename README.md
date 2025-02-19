@@ -50,7 +50,7 @@ React JS and React Native are both developed by Meta and both uses JavaScript, b
 - **Navigation**: React JS uses URL-based navigation (React Router), whereas React Native suggests React Navigation.
 - **Performance**: React Native provides better performance on mobile by using native modules, while React relies on the virtual DOM for web rendering.
 
-[⬆ Back to question](#react-native-interview-questions-and-answers)
+[⬆ Back to question](#01)
 
 ## Q2. Explain the concept of JSX in React Native?
 `JSX (JavaScript XML)` is a syntax extension that allows to write UI components in a syntax similar to HTML. In React JS, JSX is used to create virtual DOM elements that render as HTML in the browser. In React Native, it renders native mobile UI component instead of HTML elements. JSX makes code more readable, maintainable, and it allows `curly braces {}` to embed JavaScript expressions within UI.
@@ -129,4 +129,4 @@ Props (short for properties) are a way to pass data from a parent component to a
 
 State is data that is managed within a component. Unlike props, which are passed down from parent components, state is owned and controlled by the component itself. State can change over time, and when it does, the component re-renders. This is how components become dynamic. Props are immutable; state is mutable.
 
-[⬆ Back to question](#react-native-interview-questions-and-answers)
+[⬆ Back to question](#08)
