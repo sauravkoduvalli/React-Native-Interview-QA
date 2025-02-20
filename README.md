@@ -24,7 +24,7 @@ Feel free to **add more questions, improve answers, or suggest updates** through
 <hr />
 
 
-| Q No. |  Questions       |
+| Q No |  Questions       |
 |-------|------------------|
 | 01 | [What is React Native and how it is different from React JS?](#q1-what-is-react-native-and-how-it-is-different-from-react-js) |
 | 02 | [Explain the concept of JSX in React Native?](#q2-explain-the-concept-of-jsx-in-react-native) |
@@ -42,6 +42,10 @@ Feel free to **add more questions, improve answers, or suggest updates** through
 
 ### Overview
 React JS and React Native are both developed by Meta and both uses JavaScript, but they serve different purposes. React JS is a JavaScript library for building web applications, while React Native is a framework for building native compiled mobile applications for iOS and Android platforms. The use of JSX, state, props, and React Hooks further reinforces their similarities.
+
+**Library**: A collections of functions that other programs can use. They are often used to control program flow. </br>
+**Framework**: A set of pre-written code that provides a structured environment where developers follow predefined rules and use existing components to build their application. 
+
 
 ### Key Differences
 - **Platform**: React JS is used for web applications, whereas React Native is used for mobile applications.
