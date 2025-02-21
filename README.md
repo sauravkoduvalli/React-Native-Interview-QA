@@ -34,6 +34,10 @@ Feel free to **add more questions, improve answers, or suggest updates** through
 | 06 | [What are the two main types of components in React Native?](#q6-what-are-the-two-main-types-of-components-in-react-native) |
 | 07 | [What are props in React Native components, and how are they used?](#q7-what-are-props-in-react-native-components-and-how-are-they-used) |
 | 08 | [What is state in React Native components, and how is it different from props?](#q8-what-is-state-in-react-native-components-and-how-is-it-different-from-props) |
+| 09 | [Explain the component lifecycle methods in class components?](#q9-explain-the-component-lifecycle-methods-in-class-components) |
+| 10 | []() |
+| 11 | []() |
+| 12 | []() |
 
 <br />
 <hr />
@@ -132,5 +136,33 @@ Props (short for properties) are a way to pass data from a parent component to a
 ## Q8. What is state in React Native components, and how is it different from props?
 
 State is data that is managed within a component. Unlike props, which are passed down from parent components, state is owned and controlled by the component itself. State can change over time, and when it does, the component re-renders. This is how components become dynamic. Props are immutable; state is mutable.
+
+[⬆ Back to Top](#react-native-interview-questions-and-answers)
+
+## Q9. Explain the component lifecycle methods in class components?
+
+Life cycle methods are functions called at specific stages of a component's existence. These stages are typically referred to as "Mounting", "Updating", and "Unmounting" phases and each phase has specific lifecycle methods.
+
+### Key Lifecycle Methods
+1) **Mounting Phase**: 
+   Initital Phase when a class component is initialized and added to the UI.
+   
+   - **Constructor()**: This is the first method executed when the component is created. Used to initialize state and bind event handlers.
+   - **static getDerivedStateFromProps(props, state)**: This method synchronizes state with props before rendering. It runs before render() and is rarely used.
+   - **render()**: This method is required in every class component. It returns JSX to render the UI.
+   - **componentDidMount()**: Runs after the component is mounted (i.e., after the first render()). Used for API calls, event listeners, and timers.
+     
+3) **Updating Phase**:
+   This phase occurs when the component updates due to state or props changes.
+   
+   - **shouldComponentUpdate(nextProps, nextState)**: Determines whether the component should re-render. Returns true (default) to allow re-render or false to prevent it.
+   - **render()**: Called again when state or props change.
+   - **getSnapshotBeforeUpdate(prevProps, prevState)**: Runs before the DOM updates and can capture information. Returns a value that is passed to `componentDidUpdate()`.
+   - **componentDidUpdate(prevProps, prevState, snapshot)**: Runs after the component updates (re-renders). Used for network requests, animations, and syncing with external systems.
+     
+4) **Unmounting Phase**:
+   When a component is about to be removed, this method runs.
+   
+   - **componentWillUnmount()**: Cleans up event listeners, timers, or network requests.
 
 [⬆ Back to Top](#react-native-interview-questions-and-answers)
