@@ -35,8 +35,8 @@ Feel free to **add more questions, improve answers, or suggest updates** through
 | 07 | [What are props in React Native components, and how are they used?](#q7-what-are-props-in-react-native-components-and-how-are-they-used) |
 | 08 | [What is state in React Native components, and how is it different from props?](#q8-what-is-state-in-react-native-components-and-how-is-it-different-from-props) |
 | 09 | [Explain the component lifecycle methods in class components?](#q9-explain-the-component-lifecycle-methods-in-class-components) |
-| 10 | []() |
-| 11 | []() |
+| 10 | [What are React Hooks, and why are they important?](#q10-what-are-react-hooks-and-why-are-they-important) |
+| 11 | [What are the different types of hooks in React Native? Explain each with examples](#q11-what-are-the-different-types-of-hooks-in-react-native-explain-each-with-examples) |
 | 12 | []() |
 
 <br />
@@ -165,4 +165,65 @@ Life cycle methods are functions called at specific stages of a component's exis
    
    - **componentWillUnmount()**: Cleans up event listeners, timers, or network requests.
 
+[⬆ Back to Top](#react-native-interview-questions-and-answers)
+
+## Q10. What are React Hooks, and why are they important?
+
+React Hooks are special functions to manage state and lifecycle methods from function components. They help you manage state, deal with component updates, and share logic across your app in a simpler way. They promote cleaner and more reusable code.
+
+-  Basic hooks like `useState`, `useEffect`, and `useContext` are go-to for handling most of the work with state, updates, and context.
+-  Use hooks at the top level, not inside nested functions, conditional expressions or loops is not recommended.
+-  Only use hooks in React components or custom hooks and must be called in the same order on every render.
+
+[⬆ Back to Top](#react-native-interview-questions-and-answers)
+
+## Q11. What are the different types of hooks in React Native? Explain each with examples.
+
+React Hooks allow functional components to manage state, handle side effects, and interact with the app lifecycle without relying on class components.
+
+1) `useState()`:
+2) `useEffect()`;
+3) `useContext()`:
+4) `useRef()`:
+
+-  It create and persist a mutable reference (ref) that does not trigger re-renders when component updated.
+-  Mainly used for accessing DOM elements (in web apps) or component references and storing mutable values that persist across renders.
+
+### Common Use Cases of useRef in React Native.
+1)  Referencing a Component or Element (e.g., TextInput focus): `useRef` is often used to get a reference to a TextInput to programmatically focus or manipulate it.
+
+   ```typescript
+    import React, { useRef, useState } from 'react';
+    import { Text, Button, View } from 'react-native';
+
+    const App: React.FC = () => {
+    const countRef = useRef<number>(0); // Explicitly type the ref to hold a number
+    const [stateCount, setStateCount] = useState<number>(0); // Explicitly type the state to hold a number
+
+    const incrementRef = () => {
+      countRef.current += 1;
+      console.log('Ref Count:', countRef.current);
+   };
+    return (
+      <View>
+         <Text>State Count: {stateCount}</Text>
+         <Button title="Increment State Count" onPress={() => setStateCount(stateCount + 1)} />
+         <Button title="Increment Ref Count" onPress={incrementRef} />
+      </View>
+     );
+};
+
+export default App;
+```
+3)  Persisting Mutable Values Without Re-renders: store a value across renders without causing a re-render.
+4)  Storing Previous Values: store previous values of state or props.
+
+
+
+6) `useMemo()`:
+7) `useCallback()`:
+8) `useLayoutEffect()`:
+9) `useReducer()`:
+10) `useDebugValue()`:
+  
 [⬆ Back to Top](#react-native-interview-questions-and-answers)
